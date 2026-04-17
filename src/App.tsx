@@ -194,7 +194,7 @@ const ExperienceCard = ({ company, role, focus, items, image }: any) => (
     </div>
     <div className="lg:col-span-7 order-1 lg:order-2">
       <div className="aspect-video bg-zinc-100 overflow-hidden shadow-sm">
-        <img src={image} className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+        <img src={image} loading="lazy" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
       </div>
     </div>
   </motion.div>
@@ -208,7 +208,7 @@ const ProjectCardV2 = ({ title, context, build, tech, items, image, links }: any
     className="group bg-white border border-zinc-100 overflow-hidden flex flex-col"
   >
     <div className="aspect-[16/10] overflow-hidden bg-zinc-50 relative">
-      <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter grayscale" referrerPolicy="no-referrer" />
+      <img src={image} alt={title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter grayscale" referrerPolicy="no-referrer" />
       <div className="absolute inset-0 bg-brand-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
     <div className="p-8 flex-1 flex flex-col">
@@ -261,7 +261,7 @@ const AwardCard = ({ title, event, description, image }: any) => (
     <p className="text-sm text-brand-secondary mb-8 leading-relaxed max-w-xs">{description}</p>
     {image && (
       <div className="w-full aspect-video bg-white overflow-hidden mt-auto border border-zinc-200">
-        <img src={image} className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+        <img src={image} loading="lazy" className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
       </div>
     )}
   </motion.div>
@@ -319,6 +319,7 @@ export default function App() {
                 <img
                   src="/photos/profile.jpeg"
                   alt="Jonathan Gan"
+                  fetchPriority="high"
                   className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-1000"
                 />
               </div>
@@ -368,7 +369,7 @@ export default function App() {
               I view software as social infrastructure. Whether I'm scaling a distributed system or designing a mobile experience, I prioritize community, empathy, and technical rigor. I'm driven by the goal of building systems that have a tangible, positive impact on people's daily interactions.
             </p>
             <div className="pt-8">
-              <img src="/photos/jonpic1.jpeg" className="w-full h-64 object-cover filter grayscale hover:grayscale-0 transition-all duration-700" />
+              <img src="/photos/jonpic1.jpeg" loading="lazy" className="w-full h-64 object-cover filter grayscale hover:grayscale-0 transition-all duration-700" />
               <p className="mt-4 text-[10px] uppercase font-bold tracking-widest text-zinc-400">Collaborating with friends in the lab.</p>
             </div>
           </div>
@@ -502,7 +503,7 @@ export default function App() {
           </div>
           <div className="relative">
             <div className="aspect-square bg-white border border-zinc-200 p-8 shadow-2xl skew-x-[-1deg]">
-              <img src="/photos/ncur.png" className="w-full h-full object-cover filter grayscale" alt="Research Setup" />
+              <img src="/photos/ncur.png" loading="lazy" className="w-full h-full object-cover filter grayscale" alt="Research Setup" />
               <div className="absolute -bottom-8 -left-8 bg-brand-accent text-white p-6 shadow-xl max-w-xs scale-90 md:scale-100">
                 <span className="block text-[10px] uppercase font-bold tracking-[0.3em] opacity-60 mb-2">Presentation</span>
                 <p className="font-bold leading-tight">Presented at National Conference on Undergraduate Research (NCUR 2025)</p>
@@ -584,8 +585,8 @@ export default function App() {
           </div>
           <div className="mt-16 pt-16 border-t border-zinc-200">
             <div className="flex justify-center gap-12 overflow-hidden px-8">
-              <img src="/photos/jonpic1.jpeg" className="w-64 h-80 object-cover filter grayscale -rotate-3 hover:rotate-0 transition-all duration-500 rounded-sm shadow-xl" />
-              <img src="/photos/jonpic2.JPG" className="w-64 h-80 object-cover filter grayscale rotate-6 hover:rotate-0 transition-all duration-500 rounded-sm shadow-xl hidden md:block" />
+              <img src="/photos/jonpic1.jpeg" loading="lazy" className="w-64 h-80 object-cover filter grayscale -rotate-3 hover:rotate-0 transition-all duration-500 rounded-sm shadow-xl" />
+              <img src="/photos/jonpic2.JPG" loading="lazy" className="w-64 h-80 object-cover filter grayscale rotate-6 hover:rotate-0 transition-all duration-500 rounded-sm shadow-xl hidden md:block" />
             </div>
             <p className="mt-8 text-[11px] uppercase tracking-[0.4em] font-bold text-brand-accent">Human Core • Technical Rigor</p>
           </div>
