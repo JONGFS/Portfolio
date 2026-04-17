@@ -65,7 +65,7 @@ const Navbar = () => {
             <a href="https://github.com/JONGFS" target="_blank" aria-label="Github Profile" className="text-brand-secondary hover:text-brand-primary transition-colors">
               <Github className="w-4 h-4" />
             </a>
-            <a href="https://linkedin.com/in/jonathan-gan" target="_blank" aria-label="LinkedIn Profile" className="text-brand-secondary hover:text-brand-primary transition-colors">
+            <a href="https://www.linkedin.com/in/jonathan-gan-7841212b1/" target="_blank" aria-label="LinkedIn Profile" className="text-brand-secondary hover:text-brand-primary transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
             <a 
@@ -108,7 +108,7 @@ const Navbar = () => {
               <a href="https://github.com/JONGFS" target="_blank" className="text-brand-secondary">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/jonathan-gan" target="_blank" className="text-brand-secondary">
+              <a href="https://www.linkedin.com/in/jonathan-gan-7841212b1/" target="_blank" className="text-brand-secondary">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
@@ -613,7 +613,7 @@ export default function App() {
               <div className="space-y-2">
                 <span className="text-[10px] uppercase tracking-widest font-bold text-brand-accent">Socials</span>
                 <div className="flex gap-6 mt-2">
-                  <a href="https://linkedin.com/in/jonathan-gan" target="_blank" className="font-bold hover:text-brand-accent transition-colors">LINKEDIN</a>
+                  <a href="https://www.linkedin.com/in/jonathan-gan-7841212b1/" target="_blank" className="font-bold hover:text-brand-accent transition-colors">LINKEDIN</a>
                   <a href="https://github.com/JONGFS" target="_blank" className="font-bold hover:text-brand-accent transition-colors">GITHUB</a>
                 </div>
               </div>
